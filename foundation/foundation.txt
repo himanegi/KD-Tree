@@ -1,0 +1,19 @@
+II. Foundations of kd Trees
+A. Definition of kd Trees
+B. Binary Space Partitioning Trees
+C. Spatial Subdivision
+D. Nearest Neighbor Search
+
+A. Definition of kd Trees:
+kd Trees are a data structure used for organizing points in a k-dimensional space. They allow for efficient search operations such as finding the nearest neighbor or range search. The tree is constructed by recursively partitioning the space into smaller regions, with each level of the tree dividing the space along one of the coordinate axes.
+
+B. Binary Space Partitioning Trees:
+kd Trees are a type of Binary Space Partitioning Tree, which is a tree-based data structure used for partitioning space into smaller regions. Each node in the tree represents a subspace of the overall space, with the root node representing the entire space. The tree is constructed by recursively dividing the space into smaller regions using hyperplanes, with each level of the tree dividing the space along a different axis.
+
+C. Spatial Subdivision:
+The process of dividing the space into smaller regions is known as spatial subdivision. In kd Trees, the space is divided into smaller regions by hyperplanes that are perpendicular to the coordinate axes. This process continues until each region contains only a single point, at which point the tree is fully constructed.
+
+D. Nearest Neighbor Search:
+One of the key operations that can be performed on a kd Tree is nearest neighbor search, which involves finding the point in the tree that is closest to a given query point. This operation is typically performed by traversing the tree recursively, starting at the root node and moving down the tree towards the leaf nodes. At each level of the tree, the algorithm checks whether the query point is closer to the left or right subtree, based on its distance to the hyperplane that divides the region. The search continues until the leaf node containing the closest point is found.
+
+In summary, kd Trees are a powerful data structure used for organizing points in a k-dimensional space. They use spatial subdivision to recursively partition the space into smaller regions, with each level of the tree dividing the space along a different axis. This allows for efficient search operations such as nearest neighbor search, which involves finding the point in the tree that is closest to a given query point.
