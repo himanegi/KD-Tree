@@ -1,0 +1,22 @@
+introduction------------------------------------------
+
+A. Background Information:
+In computer science, a KD tree is a binary tree data structure used to partition a multi-dimensional space into smaller regions for efficient search and data analysis. It was invented by Jon Louis Bentley in 1975. KD tree is short for K-dimensional tree where each node in the tree represents a k-dimensional point. The tree is binary, and at each level, the points are divided by a hyperplane that is perpendicular to one of the axes of the k-dimensional space.
+
+B. Motivation for KD Trees:
+The motivation for using KD trees arises in situations where we need to perform efficient nearest neighbor searches or range searches in a high-dimensional space. Consider a dataset of points in a 100-dimensional space. A brute-force approach to finding the nearest neighbor of a query point would require us to compute the distance between the query point and all other points in the dataset, which would be computationally expensive. KD trees provide a way to organize the points in the dataset such that we can efficiently perform these types of searches.
+
+C. Objectives and Goals of the Presentation:
+The objectives and goals of a presentation on KD trees could be to:
+
+1. Explain the concept of KD trees and how they work
+2. Provide examples of use cases where KD trees are useful
+3. Describe the algorithms for building and searching a KD tree
+4. Discuss the advantages and disadvantages of using KD trees compared to other 
+    data structures for searching high-dimensional spaces
+5. Demonstrate how to implement a KD tree in a programming language such as 
+    Python or Java
+6. Provide insights into best practices for using KD trees and optimizing performance 
+    in different scenarios.
+
+
