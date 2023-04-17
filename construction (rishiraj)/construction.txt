@@ -1,0 +1,26 @@
+Construction of kd Trees
+A. Recursive Partitioning
+
+B. Median Selection
+C. Axis Selection
+D. Implementation of the Algorithm
+A. Recursive Partitioning:
+Recursive partitioning means repeatedly dividing the dataset into smaller subsets by splitting it along different axes (e.g., x, y, z) until we reach a stopping point. This helps create a tree-like structure where each node represents a split along an axis, and the subsets of points are the branches that lead to child nodes.
+
+B. Median Selection:
+Median selection involves finding the middle point of the dataset along a chosen axis. Imagine arranging the points along the axis and picking the point that lies exactly in the middle. This median point is used as a reference to split the dataset into two subsets, with points smaller than the median on one side and points larger on the other side.
+
+C. Axis Selection:
+Axis selection determines which axis to use for splitting the dataset at each step of the tree construction. It can be as simple as following a fixed order, for example, x-axis, then y-axis, then z-axis, and so on. Alternatively, it can be based on choosing the axis with the most variation in the dataset, which helps in creating more balanced partitions.
+
+D. Implementation of the Algorithm:
+The implementation of the kd tree construction algorithm involves sorting the points based on the chosen axis, selecting the median as the splitting point, and recursively repeating this process for each subset until a stopping criterion is met. This criterion can be a minimum number of points in a subset or a maximum depth of the tree.
+
+By following these steps, a kd tree is built, which creates a hierarchical structure for efficient organization and retrieval of points in multi-dimensional space.
+1.) Input: Start with a dataset of points in a multi-dimensional space.
+2.) Select Axis: Choose an axis for splitting the dataset at the current level of the tree, using a predetermined order or a variance-based strategy.
+3.) Median Selection: Sort the points along the chosen axis and select the median as the pivot point.
+4.) Partitioning: Split the dataset into two subsets along the chosen splitting plane, with points on one side smaller than the pivot point and points on the other side larger.
+5.) Recursive Partitioning: Recursively apply the same process to the two subsets, creating child nodes in the tree.
+6.) Stopping Criterion: Repeat the above steps until a stopping criterion is met, such as when the number of points in a subset falls below a threshold or when the tree reaches a certain depth.
+7.) Repeat: Continue the process for all levels of the tree until all subsets are partitioned and the tree is constructed.
